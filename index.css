@@ -1,0 +1,32 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-image: url('assets/bg.png');
+    background-size: cover;
+}
+
+#title{
+    font-size: 35px;
+    color: rgb(90, 37, 192);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#play-button{
+    margin-left: 35%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#play-button a{
+    text-decoration: none;
+    font-size: 50px;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(247, 246, 250);
+    padding: 15px;
+}
+
+#play-button img{
+    width: 70px;
+    height: 70px;
+}

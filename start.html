@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Rock Paper Scissors Game</title>
+</head>
+<body>
+    <div class="container">
+        <!-- <div class="header">
+            <h1 style="color: rgb(90, 37, 192);">Rock Paper Scissors Game</h1>
+        </div> -->
+        <div id="scores">
+            <p id="player-score">0</p><span>---score---</span>
+            <p id="computer-score">0</p>
+        </div>
+        <div class="game-page">
+            <div class="player" >
+                <h2>You</h2>
+                <div style="position: relative;">
+                    <img id="player-choice" alt="">
+                </div>
+                <div id="figures" >
+                    <img class="fig" src="assets/rock-logo.png" alt="Rock"  onclick="makeChoice('rock')">
+                    <img class="fig" src="assets/paper-logo.png" alt="Paper"  onclick="makeChoice('paper')">
+                    <img class="fig" src="assets/scissors-logo.png" alt="Scissors"  onclick="makeChoice('scissors')">
+                </div>
+            </div>
+            <div class="vs">
+                <img src="assets/vs.png" alt="Versus">
+            </div>
+            <div class="computer">
+                <h2>Computer</h2>
+                <div><img id="computer-choice" alt=""></div>
+            </div>
+        </div>
+        <div class="result">
+            <h3 id="result-text"></h3>
+        </div>
+        <div style="display: flex; justify-content: center;">
+          <button id="replay" onclick="resetGame()">Play Again</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
